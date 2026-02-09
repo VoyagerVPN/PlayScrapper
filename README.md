@@ -1,0 +1,2 @@
+# PlayScrapper
+Frontend website parcer
