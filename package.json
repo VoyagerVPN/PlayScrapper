@@ -1,0 +1,51 @@
+{
+  "name": "playscrapper",
+  "version": "1.0.0",
+  "description": "CLI utility for cloning and scraping websites with Playwright",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "playscrapper": "./dist/cli.js",
+    "playscrapper-cmd": "./dist/playscrapper.cmd"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "knip": "knip",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  },
+  "keywords": [
+    "scraper",
+    "crawler",
+    "playwright",
+    "website-cloner"
+  ],
+  "author": "Voyager",
+  "license": "MIT",
+  "dependencies": {
+    "async-mutex": "^0.5.0",
+    "cheerio": "1.2.0",
+    "commander": "14.0.3",
+    "playwright": "1.58.2",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "25.2.2",
+    "@typescript-eslint/eslint-plugin": "8.54.0",
+    "@typescript-eslint/parser": "8.54.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "eslint": "8.57.1",
+    "knip": "5.83.1",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "vitest": "4.0.18"
+  },
+  "engines": {
+    "node": "25.6.0"
+  }
+}

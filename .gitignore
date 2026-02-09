@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.env
+scraped/
+output/
+*.tsbuildinfo
+coverage/
+.nyc_output/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+test-browser.ts
+KellyC-Image-Downloader-master/
